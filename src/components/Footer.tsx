@@ -94,9 +94,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-secondary-foreground/10 mt-8 pt-8 text-center text-sm text-secondary-foreground/60">
-          © 2024 Еда на дом. Все права защищены.
-        </div>
+        <div className="border-t border-secondary-foreground/10 mt-8 pt-8 text-center text-sm text-secondary-foreground/60">© 2025 Еда на дом. Все права защищены.</div>
       </div>
     </footer>
   );
