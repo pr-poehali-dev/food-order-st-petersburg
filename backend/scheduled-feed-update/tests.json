@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "Scheduled feed update",
+      "method": "POST",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "products_count": "number",
+        "message": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

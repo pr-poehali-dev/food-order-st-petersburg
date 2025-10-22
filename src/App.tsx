@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
 import ProductPage from "./pages/ProductPage";
 import StaticPage from "./pages/StaticPage";
+import SitemapRedirect from "./pages/SitemapRedirect";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/privacy" element={<StaticPage title="Политика конфиденциальности" content={<p>Мы уважаем вашу конфиденциальность и защищаем ваши данные.</p>} />} />
           <Route path="/personal-data" element={<StaticPage title="Политика обработки персональных данных" content={<p>Информация о том, как мы обрабатываем ваши персональные данные.</p>} />} />
           <Route path="/payment-rules" element={<StaticPage title="Правила оплаты и возврата" content={<p>Условия оплаты и возврата товаров.</p>} />} />
+          <Route path="/sitemap.xml" element={<SitemapRedirect />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

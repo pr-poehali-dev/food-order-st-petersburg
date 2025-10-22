@@ -1,4 +1,6 @@
 {
+  "generate-sitemap": "https://functions.poehali.dev/6606b5f5-2b30-4f96-80bb-af7561d589bd",
+  "scheduled-feed-update": "https://functions.poehali.dev/4237fdcb-0cff-43ff-86ae-f1fb456ee244",
   "get-products": "https://functions.poehali.dev/4fcc1708-1d4a-49d6-bebc-0468a45af101",
   "get-product": "https://functions.poehali.dev/91e85aef-6fcb-4eab-8d59-fe06cd9871e1",
   "feed-parser": "https://functions.poehali.dev/04294cb8-c810-41bd-bc7f-14b2cbda930e"
