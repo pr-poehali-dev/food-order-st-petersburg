@@ -10,6 +10,7 @@ import ProductPage from "./pages/ProductPage";
 import StaticPage from "./pages/StaticPage";
 import SitemapRedirect from "./pages/SitemapRedirect";
 import NotFound from "./pages/NotFound";
+import Contacts from "./pages/Contacts";
 
 const queryClient = new QueryClient();
 
@@ -25,7 +26,7 @@ const App = () => (
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/promotions" element={<StaticPage title="Акции" content={<p>Следите за нашими специальными предложениями и акциями!</p>} />} />
           <Route path="/delivery" element={<StaticPage title="Доставка" content={<><p>Мы доставляем еду по всему Санкт-Петербургу за 30-60 минут.</p><p>Минимальная сумма заказа - 500 рублей. Доставка бесплатная при заказе от 1000 рублей.</p></>} />} />
-          <Route path="/contacts" element={<StaticPage title="Контакты" content={<><p>Телефон: +7 (812) 123-45-67</p><p>Email: info@eda-nadom.ru</p><p>Адрес: Санкт-Петербург</p></>} />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<StaticPage title="О нас" content={<p>Мы - команда профессионалов, которая любит готовить и доставлять вкусную еду жителям Санкт-Петербурга.</p>} />} />
           <Route path="/offer" element={<StaticPage title="Публичная оферта" content={<p>Условия использования сервиса доставки еды.</p>} />} />
           <Route path="/terms" element={<StaticPage title="Пользовательское соглашение" content={<p>Правила пользования сайтом.</p>} />} />
