@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
+import SchemaOrg from '@/components/SchemaOrg';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
@@ -42,6 +43,7 @@ export default function Catalog() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SchemaOrg type="organization" />
       <Header />
 
       <section className="bg-gradient-to-br from-accent to-white py-12">

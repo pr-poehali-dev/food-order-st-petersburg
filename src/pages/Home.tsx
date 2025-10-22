@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
+import SchemaOrg from '@/components/SchemaOrg';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
@@ -37,6 +38,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SchemaOrg type="website" />
+      <SchemaOrg type="organization" />
       <Header />
 
       <section className="relative bg-gradient-to-br from-accent via-orange-50 to-white py-20 overflow-hidden">

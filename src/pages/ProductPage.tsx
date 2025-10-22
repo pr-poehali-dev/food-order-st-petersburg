@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SchemaOrg from '@/components/SchemaOrg';
+import BreadcrumbsSchema from '@/components/BreadcrumbsSchema';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
@@ -93,6 +95,24 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SchemaOrg 
+        type="product" 
+        product={{
+          name: product.name,
+          description: product.description,
+          image: product.image_url || '/placeholder.svg',
+          price: product.price,
+          oldPrice: product.old_price,
+          url: product.url
+        }}
+      />
+      <BreadcrumbsSchema 
+        items={[
+          { name: 'Главная', url: '/' },
+          { name: 'Каталог', url: '/catalog' },
+          { name: product.name, url: `/product/${product.id}` }
+        ]}
+      />
       <Header />
 
       <div className="container mx-auto px-4 py-8">
