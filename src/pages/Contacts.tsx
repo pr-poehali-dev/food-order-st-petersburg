@@ -28,11 +28,20 @@ export default function Contacts() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const mailtoLink = `mailto:info@eda-nadom.ru?subject=${encodeURIComponent(`Заявка от ${formData.name}`)}&body=${encodeURIComponent(
+      `Имя: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Телефон: ${formData.phone || 'Не указан'}\n\n` +
+      `Сообщение:\n${formData.message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+
+    await new Promise(resolve => setTimeout(resolve, 500));
 
     toast({
-      title: "Сообщение отправлено!",
-      description: "Мы свяжемся с вами в ближайшее время.",
+      title: "Почтовый клиент открыт!",
+      description: "Отправьте письмо из вашей почтовой программы.",
     });
 
     setFormData({
