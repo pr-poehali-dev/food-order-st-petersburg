@@ -77,7 +77,7 @@ export default function Footer() {
 
           <div>
             <h3 className="font-heading font-semibold text-white mb-4">Контакты</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-4">
               <li className="flex items-center space-x-2 text-sm text-secondary-foreground/80">
                 <Icon name="MapPin" size={16} />
                 <span>Санкт-Петербург</span>
@@ -91,6 +91,21 @@ export default function Footer() {
                 <span>info@eda-nadom.ru</span>
               </li>
             </ul>
+            <a 
+              href="https://metrika.yandex.ru/stat/?id=104783055&amp;from=informer" 
+              target="_blank" 
+              rel="nofollow"
+            >
+              <img 
+                src="https://informer.yandex.ru/informer/104783055/3_0_EFEFEFFF_EFEFEFFF_0_pageviews"
+                style={{ width: '88px', height: '31px', border: 0 }}
+                alt="Яндекс.Метрика"
+                title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+                className="ym-advanced-informer" 
+                data-cid="104783055" 
+                data-lang="ru"
+              />
+            </a>
           </div>
         </div>
 

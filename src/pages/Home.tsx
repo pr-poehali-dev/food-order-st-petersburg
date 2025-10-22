@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
 import SchemaOrg from '@/components/SchemaOrg';
+import ReviewsSection from '@/components/ReviewsSection';
+import FAQSection from '@/components/FAQSection';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
@@ -143,6 +145,10 @@ export default function Home() {
           </div>
         )}
       </section>
+
+      <ReviewsSection />
+
+      <FAQSection />
 
       <Footer />
     </div>
